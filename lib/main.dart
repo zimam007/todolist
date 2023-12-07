@@ -61,7 +61,7 @@ class _ToDoListState extends State<ToDoList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Zimam's To-Do List"),
+        title: Text("Ravi's To-Do List"),
       ),
       body: Column(
         children: [
@@ -72,13 +72,13 @@ class _ToDoListState extends State<ToDoList> {
                 Expanded(
                   child: TextField(
                     controller: _taskController,
-                    decoration: InputDecoration(labelText: 'Enter task'),
+                    decoration: InputDecoration(labelText: 'Schedule Your Day'),
                   ),
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
                   onPressed: _addTask,
-                  child: Text('Add'),
+                  child: Text('+'),
                 ),
               ],
             ),
